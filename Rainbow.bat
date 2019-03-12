@@ -21,18 +21,18 @@ IF /i %extension%==.jpg (
 	echo No conversion needed
 )
 
-if /i %size%==_(
-	echo Specify size
-	exit /b
-)
-if /i %size%<32(
-	echo Resolution must be 32x32 up to 1024x1024
-	exit /b
-)
-if /i %size%>1024(
-	echo Resolution must be 32x32 up to 1024x1024
-	exit /b
-)
+rem if /i %size%==_(
+	rem echo Specify size
+	rem exit /b
+rem )
+rem if /i %size%<32(
+	rem echo Resolution must be 32x32 up to 1024x1024
+	rem  exit /b
+rem )
+rem if /i %size%>1024(
+	rem echo Resolution must be 32x32 up to 1024x1024
+	rem exit /b
+rem )
 
 set gray=gray_%1
 
